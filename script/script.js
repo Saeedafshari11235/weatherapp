@@ -7,3 +7,6 @@ let cities={
 }
 let inp = document.querySelector("#city")
 let search= document.querySelector("#icon")
+search.addEventListener("click",function(){ 
+    console.log(cities[inp.value])
+})
