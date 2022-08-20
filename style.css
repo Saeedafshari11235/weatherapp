@@ -16,7 +16,6 @@ main{
 }
 form{
     padding: 2rem;
-    display: flex;
 }
 input{
     width: 12rem;
@@ -34,7 +33,7 @@ input{
     color: #fff;
     transition: 0.3s;
 }
-div{
+#icon{
     background-color: #333;
     display: flex;
     align-items: center;
@@ -45,7 +44,10 @@ div{
     border-radius: 3rem;
     transition: 0.3s;
 }
-div:hover{
+#icon:hover{
     transform: translateY(-0.2rem);
     cursor: pointer;
+}
+.top{
+    display: flex;
 }

@@ -5,3 +5,5 @@ let cities={
     newyork:{city:"NewYork",temp:"25°C",humidity:"80%",windspeed:"30km",weather:"Thunder"},
     beijing:{city:"Beijing",temp:"9°C",humidity:"30%",windspeed:"0km",weather:"Foggy"}
 }
+let inp = document.querySelector("#city")
+let search= document.querySelector("#icon")
