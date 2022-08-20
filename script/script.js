@@ -14,6 +14,7 @@ search.addEventListener("click",function(){
     console.log(cities[inp.value].humidity)
     console.log(cities[inp.value].windspeed)
     console.log(cities[inp.value].weather)*/
+    sect.innerHTML = ""
     let title = document.createElement("h1")
     let tmp = document.createElement("h4")
     let wthr = document.createElement("h2")
