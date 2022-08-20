@@ -32,6 +32,7 @@ input{
 }
 .fa-search{
     color: #fff;
+    transition: 0.3s;
 }
 div{
     background-color: #333;
@@ -42,4 +43,8 @@ div{
     width: 1.8rem;
     height: 1.8rem;
     border-radius: 3rem;
+    transition: 0.3s;
+}
+div:hover{
+    transform: translateY(-0.2rem);
 }
