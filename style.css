@@ -47,4 +47,5 @@ div{
 }
 div:hover{
     transform: translateY(-0.2rem);
+    cursor: pointer;
 }
