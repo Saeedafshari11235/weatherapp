@@ -16,14 +16,30 @@ main{
 }
 form{
     padding: 2rem;
+    display: flex;
 }
 input{
     width: 12rem;
-    height: 1.5rem;
+    height: 1.8rem;
     background-color: #333;
     border: none;
     outline: none;
     border-radius: 0.75rem;
     color: #fff;
     padding: 0rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Righteous', cursive;
+}
+.fa-search{
+    color: #fff;
+}
+div{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 3rem;
 }
