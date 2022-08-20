@@ -9,3 +9,8 @@ body{
     background-size:100vw 100vh;
     overflow: hidden;
 }
+main{
+    background-color: rgb(33, 33, 33);
+    opacity: 0.8;
+    border-radius: 2rem;
+}
