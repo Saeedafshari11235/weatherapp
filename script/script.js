@@ -6,7 +6,27 @@ let cities={
     beijing:{city:"Beijing",temp:"9°C",humidity:"30%",windspeed:"0km",weather:"Foggy"}
 }
 let inp = document.querySelector("#city")
-let search= document.querySelector("#icon")
+let search = document.querySelector("#icon")
+let sect = document.querySelector("#cities")
 search.addEventListener("click",function(){ 
-    console.log(cities[inp.value])
+    /*console.log(cities[inp.value].city)
+    console.log(cities[inp.value].temp)
+    console.log(cities[inp.value].humidity)
+    console.log(cities[inp.value].windspeed)
+    console.log(cities[inp.value].weather)*/
+    let title = document.createElement("h1")
+    let tmp = document.createElement("h4")
+    let wthr = document.createElement("h2")
+    let wind = document.createElement("h4")
+    let hmdt = document.createElement("h4")
+    wthr.innerHTML = "Weather:"+cities[inp.value].weather
+    tmp.innerHTML ="Temperature:"+ cities[inp.value].temp
+    wind.innerHTML ="Wind speed:"+ cities[inp.value].windspeed
+    hmdt.innerHTML ="Humidity:"+ cities[inp.value].humidity
+    title.innerHTML = cities[inp.value].city
+    sect.appendChild(title)
+    sect.appendChild(wthr)
+    sect.appendChild(tmp)
+    sect.appendChild(hmdt)
+    sect.appendChild(wind)
 })

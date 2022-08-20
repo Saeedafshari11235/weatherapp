@@ -51,3 +51,6 @@ input{
 .top{
     display: flex;
 }
+#cities{
+    color: #fff;
+}
