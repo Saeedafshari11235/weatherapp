@@ -20,14 +20,10 @@ search.addEventListener("click",function(){
     let wthr = document.createElement("h2")
     let wind = document.createElement("h4")
     let hmdt = document.createElement("h4")
-    wthr.innerHTML = "Weather:"+cities[inp.value].weather
-    tmp.innerHTML ="Temperature:"+ cities[inp.value].temp
-    wind.innerHTML ="Wind speed:"+ cities[inp.value].windspeed
-    hmdt.innerHTML ="Humidity:"+ cities[inp.value].humidity
-    title.innerHTML = cities[inp.value].city
-    sect.appendChild(title)
-    sect.appendChild(wthr)
-    sect.appendChild(tmp)
-    sect.appendChild(hmdt)
-    sect.appendChild(wind)
+    wthr.innerHTML = "Weather:"+cities[inp.value.toLowerCase()].weather
+    tmp.innerHTML ="Temperature:"+ cities[inp.value.toLowerCase()].temp
+    wind.innerHTML ="Wind speed:"+ cities[inp.value.toLowerCase()].windspeed
+    hmdt.innerHTML ="Humidity:"+ cities[inp.value.toLowerCase()].humidity
+    title.innerHTML = cities[inp.value.toLowerCase()].city
+    sect.append(title,wthr,tmp,hmdt,wind)
 })
